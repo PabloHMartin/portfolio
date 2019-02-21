@@ -2,15 +2,48 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar>Menu</mat-toolbar>
+    <mat-toolbar>
+      <div class="logo" fxLayout="column">
+        <div>Pablo</div>
+        <div>Hernández</div>
+        <div>Full Stack Developer</div>
+      </div>
+    </mat-toolbar>
+    <mat-divider></mat-divider>
     <mat-nav-list>
-      <a mat-list-item href="#">Link 1</a>
-      <a mat-list-item href="#">Link 2</a>
-      <a mat-list-item href="#">Link 3</a>
+
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">person</mat-icon>
+        <span class="about">Sobre mi</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">trending_up</mat-icon>
+        <span class="about">Experiencia</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">view_quilt</mat-icon>
+        <span class="about">Proyectos</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">widgets</mat-icon>
+        <span class="about">Skills</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">school</mat-icon>
+        <span class="about">Educación</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">email</mat-icon>
+        <span class="about">Contacto</span>
+      </a>
+      <a mat-list-item href="#" fxLayout="row" fxLayoutAlign="start space-between">
+        <mat-icon class="nav_icon">description</mat-icon>
+        <span class="about">Currículo</span>
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar color="primary">
+    <mat-toolbar fxHide.gt-sm color="primary">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
