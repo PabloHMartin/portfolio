@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 200px;
+  width: 190px;
 }
 
 .sidenav .mat-toolbar {
@@ -24,3 +24,11 @@ margin-right:10px;
   top: 0;
   z-index: 1;
 }
+.logo{
+  height: 150px;
+  padding: 10px;
+  .subtitle{
+    font-size: 0.8em;
+  }
+}
+
