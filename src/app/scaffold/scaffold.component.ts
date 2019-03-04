@@ -15,6 +15,11 @@ export class ScaffoldComponent {
       map(result => result.matches)
     );
 
-  constructor(private breakpointObserver: BreakpointObserver) {}
+  constructor(private breakpointObserver: BreakpointObserver) { }
+
+  scroll(id: string) {
+    const el = document.getElementById(id);
+    el.scrollIntoView();
+  }
 
 }

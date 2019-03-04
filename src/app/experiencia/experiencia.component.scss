@@ -1,0 +1,34 @@
+mat-card-header{
+  margin-bottom: 0px;
+}
+mat-toolbar {
+  font-size: 2.5em;
+  padding: 1.4em;
+}
+.header_empresa{
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #546E7A;
+}
+.header_rol{
+  font-size: 1.2em;
+  color: #795548;
+}
+.content_header{
+  font-size: 1.3em;
+  margin-bottom: 1em;
+}
+.content_title{
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 1em;
+}
+.content_ul{
+  margin-bottom: 3em;
+}
+
+mat-card-footer{
+  padding: 2em;
+  padding-bottom: 1em;
+  font-size: 0.8em;
+}

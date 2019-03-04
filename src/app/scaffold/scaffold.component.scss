@@ -17,7 +17,7 @@
   display: visible;
 }
 .nav_icon{
-margin-right:10px;
+margin-right:15px;
 }
 .mat-toolbar.mat-primary {
   position: sticky;
@@ -31,4 +31,30 @@ margin-right:10px;
     font-size: 0.8em;
   }
 }
-
+.blue{
+  color: #0d47a1;
+}
+.green{
+  color: #2e7d32;
+}
+.light_green{
+  color: #33691e;
+}
+.teal{
+  color: teal;
+}
+.yellow{
+  color: #ffea00;
+}
+.deep_orange{
+  color: #d84315;
+}
+.purple{
+  color: #7b1fa2;
+}
+.font_size_plus{
+  font-size: 1.8em;
+}
+.sidenav-container{
+  background-image: url("../../assets/bg.png");
+}

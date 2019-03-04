@@ -1,1 +1,42 @@
-<mat-toolbar>EXPERIENCIA</mat-toolbar>
+<section id="experience" fxLayout="column">
+  <mat-toolbar color="primary" fxFlex="1 1 100%">EXPERIENCIA</mat-toolbar>
+  <div fxLayoutAlign="center center" [ngStyle]="{'padding.em': 3, 'padding-top.em': 3}"
+    [ngStyle.lt-lg]="{'padding.em': 5}" [ngStyle.lt-md]="{'padding.em': 1}">
+    <mat-card fxLayout="column" fxLayoutGap="1em">
+      <mat-card-header fxLayout="column" fxLayoutAlign="center center" fxLayout.gt-md="row"
+        fxLayoutAlign.gt-md="space-around center" fxLayoutGap="1em">
+        <img src="../../assets/Idimad-360.png" alt="idimad360">
+        <div fxFlex="1 1 50%" fxLayout="column" fxLayoutAlign="center center">
+          <div class="header_empresa" fxFlex="2 1 100%">Idimad 360</div>
+          <div class="header_rol" fxFlex="2 1 100%">Desarrollador Full-Stack</div>
+        </div>
+      </mat-card-header>
+      <div fxLayoutAlign="center center">
+        <mat-divider></mat-divider>
+      </div>
+      <mat-card-content fxLayoutGap="1em">
+        <div class="content_header">
+          Proyectos de Desarrollo de software full-stack y CMS
+        </div>
+        <div class="content_title">
+          DESARROLLO DE PRODUCTO
+        </div>
+        <ul class="content_ul">
+          <li>Desarrollo full-stack de apps con Angular, Firebase y Spring REST</li>
+          <li>Diseño de aplicaciónes con Adobe XD y desarrollo móvil con Flutter</li>
+          <li>Gestión y creación de webs/e-commerces con CMS Wordpress y Prestashop</li>
+        </ul>
+        <div class="content_title">
+          LOGROS
+        </div>
+        <ul class="content_ul">
+          <li>Aprendizaje de varios frameworks de desarrollo y CMS</li>
+          <li>Diseño de requisitos junto con el equipo de programación</li>
+        </ul>
+      </mat-card-content>
+      <mat-card-footer>
+        octubre 2018 - actual
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</section>
