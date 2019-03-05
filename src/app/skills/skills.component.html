@@ -1,7 +1,7 @@
 <section fxLayout="column" fxLayoutAlign="strech center">
   <mat-toolbar color="primary" id="skills">SKILLS</mat-toolbar>
   <div class="cards_container" fxLayout="column" fxFlex="1 1 100%" fxLayoutAlign="center center" fxLayoutGap="2em">
-    <mat-card fxFlex="1 1 100%">
+    <mat-card fxFlex="1 1 100%" [ngStyle.lt-md]="{'max-width.%': 90}">
       <mat-card-header>
         <mat-card-title>
           FRONT-END
@@ -10,7 +10,7 @@
       <div>
         <mat-divider></mat-divider>
       </div>
-      <mat-card-content fxLayout="row" fxLayoutGap="1em">
+      <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="1em">
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
           <img src="../../assets/html5.png" alt="html5">
           <div>HTML 5</div>
@@ -31,14 +31,15 @@
           <img src="../../assets/angular.png" alt="angular">
           <div>ANGULAR</div>
         </div>
+
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
-          <img src="../../assets/angularmaterial.png" width="200px" height="150px" alt="angular">
-          <div>ANGULAR MATERIAL</div>
+          <img src="../../assets/angularmaterial.png" width="200px" alt="angular">
+          <div>ANGULAR</div>
         </div>
       </mat-card-content>
     </mat-card>
 
-    <mat-card fxFlex="1 1 100%">
+    <mat-card fxFlex="1 1 100%" [ngStyle.lt-md]="{'max-width.%': 90}">
       <mat-card-header>
         <mat-card-title>
           BACK-END
@@ -47,7 +48,7 @@
       <div>
         <mat-divider></mat-divider>
       </div>
-      <mat-card-content fxLayout="row" fxLayoutGap="1em">
+      <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="1em">
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
           <img src="../../assets/spring.png" alt="spring" height="150px">
           <div>SPRING</div>
@@ -58,7 +59,7 @@
         </div>
       </mat-card-content>
     </mat-card>
-    <mat-card fxFlex="1 1 100%">
+    <mat-card fxFlex="1 1 100%" [ngStyle.lt-md]="{'padding.em': 3}">
       <mat-card-header>
         <mat-card-title>
           HERRAMIENTAS
@@ -67,7 +68,7 @@
       <div>
         <mat-divider></mat-divider>
       </div>
-      <mat-card-content fxLayout="row" fxLayoutGap="1em">
+      <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="1em">
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
           <img src="../../assets/github.png" alt="github">
           <div>GITHUB</div>

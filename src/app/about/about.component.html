@@ -1,7 +1,8 @@
 <section id="about" fxLayout="row wrap">
   <mat-toolbar color="primary" fxFlex="1 1 100%">SOBRE MI</mat-toolbar>
-  <div fxFlex="1 1 100%" gdAlignColumns="center start" [ngStyle]="{'padding.em': 6 ,'padding-top.em': 3 ,'padding-bottom.em': 3 , 'font-size.em': 1.4}"
-    fxLayout="column" fxLayoutGap="2.5em">
+  <div fxFlex="1 1 100%" gdAlignColumns="center start"
+    [ngStyle]="{'padding.em': 6 ,'padding-top.em': 3 ,'padding-bottom.em': 3 , 'font-size.em': 1.4}"
+    [ngStyle.lt-md]="{'padding.em': 2}" fxLayout="column" fxLayoutGap="2.5em">
     <div class="resaltado" fxLayout="row" fxLayoutGap="10px">
       <div class="separador" fxFlex="1 1 2%">
       </div>

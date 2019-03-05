@@ -1,18 +1,37 @@
-<section>
-  <mat-toolbar color="primary" id="projects">PROYECTOS</mat-toolbar>
-  <div>
-    <mat-card fxLayout="coloum">
-      <img mat-card-image>
-      <mat-card-content>
-        <div>
-          <mat-card-subtitle>subtitulo</mat-card-subtitle>
-          <mat-card-actions></mat-card-actions>
+<section id="projects" fxLayout="column">
+  <mat-toolbar color="primary">PROYECTOS</mat-toolbar>
+  <div class="cards_container" fxLayout="column" fxFlex="1 1 100%" fxLayoutAlign="center center" fxLayoutGap="2em">
+    <mat-card fxFlex="1 1 100%">
+      <div class="image_container">
+        <img src="../../assets/galher.JPG" alt="galher">
+      </div>
+      <mat-card-content fxLayout="column" fxLayoutGap="1em">
+        <div class="title" fxLayout="row" fxLayoutAlign="space-between center">
+          <div>Galher Barber Shop</div>
+          <button width="20px" mat-icon-button [matMenuTriggerFor]="menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
         </div>
-        <div>
-          descripción breve
+        <div class="description">
+          PWA para gestión de reservas en barbería
         </div>
- 
+        <ul>
+          <li>API REST Spring</li>
+          <li>PWA Angular</li>
+          <li>Angular Material</li>
+          <li>Fx Flex Angular</li>
+        </ul>
       </mat-card-content>
     </mat-card>
   </div>
 </section>
+<mat-menu #menu="matMenu">
+  <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
+    <i class="fas fa-external-link-alt icon"></i>
+    <span class="text">Abrir</span>
+  </button>
+  <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
+    <i class="fab fa-github icon"></i>
+    <span class="text">Github</span>
+  </button>
+</mat-menu>

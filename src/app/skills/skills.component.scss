@@ -3,15 +3,17 @@ mat-toolbar {
   padding: 1.4em;
 }
 .cards_container{
-  padding: 4em;
   padding-top: 2em;
-  min-width: 100%;
-
+  padding-bottom: 2em;
 }
 .logo_text{
   text-align: center;
   font-weight: bold;
+
 }
 mat-card-content{
   padding: 1em;
+}
+mat-card{
+max-width: 90%;
 }

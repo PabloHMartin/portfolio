@@ -2,12 +2,14 @@
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
     [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'" [mode]="(isHandset$ | async) ? 'over' : 'side'"
     [opened]="!(isHandset$ | async)">
-    <mat-toolbar>
-      <div class="logo" fxLayout="column" fxLayoutAlign="center start">
-        <div>Pablo</div>
-        <div>Hernández</div>
-        <div class="subtitle">Full Stack Developer</div>
-      </div>
+    <mat-toolbar fxHide.lt-md>
+      <a (click)="scroll('home')">
+        <div class="logo" fxLayout="column" fxLayoutAlign="center start">
+          <div class="title">Pablo</div>
+          <div class="title">Hernández</div>
+          <div class="subtitle">Full Stack Developer</div>
+        </div>
+      </a>
     </mat-toolbar>
     <mat-divider></mat-divider>
     <mat-nav-list>
@@ -45,12 +47,15 @@
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
-    <mat-toolbar fxHide.gt-sm color="primary">
+    <mat-toolbar class="mobile_toolbar" fxHide.gt-sm color="primary" fxLayoutAlign="space-between center">
       <button type="button" aria-label="Toggle sidenav" mat-icon-button (click)="drawer.toggle()"
         *ngIf="isHandset$ | async">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>Pablo Hernández Martín</span><span>Full stack developer</span>
+      <div fxLayout="column" fxLayoutAlign="center center" fxFlex="1 1 100%">
+        <span class="title">Pablo Hernández Martín</span><span class="subtitle">Full stack developer</span>
+
+      </div>
     </mat-toolbar>
     <!-- Add Content Here -->
     <app-home></app-home>

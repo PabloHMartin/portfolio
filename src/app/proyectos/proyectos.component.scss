@@ -2,3 +2,42 @@ mat-toolbar {
   font-size: 2.5em;
   padding: 1.4em;
 }
+.cards_container{
+  padding: 4em;
+  padding-top: 2em;
+  min-width: 100%;
+}
+mat-card{
+  min-height: 400px;
+  min-width: 400px;
+  padding: 0px;
+  max-width: 90%;
+}
+mat-card-content{
+  padding: 1.5em;
+}
+.title{
+  color: #546E7A;
+  font-weight: bold;
+  font-size: 1.5em;
+}
+.description{
+  font-size: 1.1em;
+}
+.image_container{
+  img{
+    height: 250px;
+    object-fit: cover;
+    max-width: 100%;
+  }
+}
+.icon{
+  font-size: 1.5em;
+  color: #546E7A;
+}
+.text{
+  font-size: 1.2em;
+}
+.boton{
+  padding: 1em;
+}

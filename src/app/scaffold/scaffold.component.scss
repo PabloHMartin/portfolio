@@ -27,8 +27,13 @@ margin-right:15px;
 .logo{
   height: 150px;
   padding: 10px;
+  .title {
+    color:#546E7A;
+    font-size: 1.2em;
+  }
   .subtitle{
-    font-size: 0.8em;
+    color:#546E7A;
+    font-size: 0.7em;
   }
 }
 .blue{
@@ -57,4 +62,23 @@ margin-right:15px;
 }
 .sidenav-container{
   background-image: url("../../assets/bg.png");
+}
+mat-nav-list{
+  width: 150px;
+}
+.mobile_toolbar{
+  height: 80px;
+  background-color: #fff;
+  mat-icon{
+    color: #546E7A;
+    font-size: 3em;
+  }
+  .title {
+    color:#546E7A;
+    font-weight: bold;
+  }
+  .subtitle{
+    color:#546E7A;
+    font-size: 1em;
+  }
 }
