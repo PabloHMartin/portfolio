@@ -1,9 +1,10 @@
 <section>
-  <mat-toolbar color="primary" id="contact">CONTACTO</mat-toolbar>
-  <div class="contact_options" fxLayoutGap="1em" fxLayoutAlign="start start" fxLayout="column"
+  <mat-toolbar color="primary" id="contact" [ngStyle.lt-md]="{'margin-top.px': 80}">CONTACTO</mat-toolbar>
+  <div class="contact_options" fxLayoutGap="1em" fxLayoutAlign="center start" fxLayout="column"
     [ngStyle.lt-md]="{'font-size.em': 1}">
     <div fxLayoutGap="1em">
-      <i class="fas fa-envelope"></i><span>pablohmartindev@gmail.com</span>
+      <i class="fas fa-envelope"></i><a
+        href="mailto:pablohmartindev@gmail.com"><span>pablohmartindev@gmail.com</span></a>
     </div>
     <div fxLayoutGap="1em">
       <i class="fab fa-github"></i><span><a

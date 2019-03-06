@@ -5,13 +5,11 @@ mat-toolbar {
 .cards_container{
   padding: 4em;
   padding-top: 2em;
-  min-width: 100%;
 }
 mat-card{
   min-height: 400px;
-  min-width: 400px;
+
   padding: 0px;
-  max-width: 90%;
 }
 mat-card-content{
   padding: 1.5em;
@@ -26,9 +24,8 @@ mat-card-content{
 }
 .image_container{
   img{
-    height: 250px;
-    object-fit: cover;
-    max-width: 100%;
+
+    max-width: 350px;
   }
 }
 .icon{
@@ -40,4 +37,8 @@ mat-card-content{
 }
 .boton{
   padding: 1em;
+}
+a{
+  text-decoration: none;
+  color: #546E7A;
 }

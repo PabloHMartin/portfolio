@@ -1,9 +1,8 @@
 <section id="education" fxLayout="column">
-  <mat-toolbar color="primary">EDUCACION</mat-toolbar>
-  <div class="cards_container" fxLayout="column" fxFlex="1 1 100%" fxLayoutAlign="center center" fxLayoutGap="2em">
-    <div fxFlex="1 1 100%" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="center space-between"
-      fxLayoutGap="1em">
-      <mat-card fxFlex="1 1 100%">
+  <mat-toolbar color="primary" [ngStyle.lt-md]="{'margin-top.px': 80}">FORMACIÓN</mat-toolbar>
+  <div class="cards_container" fxLayout="column" fxFlex="1 1 100%" fxLayoutAlign="center center" fxLayoutGap="1em">
+    <div fxLayout="row wrap" fxLayout.lt-md="column" fxLayoutAlign="center space-between" fxLayoutGap="1em">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>CIFP Ponferrada</mat-card-title>
           <mat-card-subtitle>Técnico Superior en Desarrollo de Aplicaciones Web</mat-card-subtitle>
@@ -15,7 +14,7 @@
           </ul>
         </mat-card-content>
       </mat-card>
-      <mat-card fxFlex="1 1 100%">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>EOI Salamanca</mat-card-title>
           <mat-card-subtitle>Nivel avanzado II idioma inglés</mat-card-subtitle>
@@ -27,8 +26,8 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div fxFlex="1 1 100%" fxLayout.lt-md="column" fxLayoutAlign="center space-between" fxLayoutGap="1em">
-      <mat-card fxFlex="1 1 100%">
+    <div fxLayout.lt-md="column" fxLayoutAlign="center space-between" fxLayoutGap="1em">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>Escuela IT</mat-card-title>
           <mat-card-subtitle>Curso de Programación orientada a objetos</mat-card-subtitle>
@@ -39,7 +38,7 @@
           </ul>
         </mat-card-content>
       </mat-card>
-      <mat-card fxFlex="1 1 100%">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>Escuela IT</mat-card-title>
           <mat-card-subtitle>Curso de Análisis y diseño orientado a objetos</mat-card-subtitle>
@@ -52,8 +51,8 @@
         </mat-card-content>
       </mat-card>
     </div>
-    <div fxFlex="1 1 100%" fxLayout.lt-md="column" fxLayoutAlign="center space-between" fxLayoutGap="1em">
-      <mat-card fxFlex="1 1 100%">
+    <div fxLayout.lt-md="column" fxLayoutAlign="start space-between" fxLayoutGap="1em">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>Escuela IT</mat-card-title>
           <mat-card-subtitle>Curso de pruebas del software.</mat-card-subtitle>
@@ -65,7 +64,7 @@
           </ul>
         </mat-card-content>
       </mat-card>
-      <mat-card fxFlex="1 1 100%">
+      <mat-card>
         <mat-card-header>
           <mat-card-title>Escuela IT</mat-card-title>
           <mat-card-subtitle>Curso de Spring Framework</mat-card-subtitle>
