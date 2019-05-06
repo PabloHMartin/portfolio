@@ -31,7 +31,10 @@
           <img [ngStyle.lt-md]="{'max-width.px': 75}" src="../../assets/angular.png" alt="angular">
           <div>ANGULAR</div>
         </div>
-
+        <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
+          <img class="logo_max" [ngStyle.lt-md]="{'max-width.px': 80}" src="../../assets/ionic.png" alt="ionic">
+          <div>IONIC 4</div>
+        </div>
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
           <img [ngStyle.lt-md]="{'max-width.px': 90}" src="../../assets/angularmaterial.png" width="200px"
             alt="angular">
@@ -57,6 +60,27 @@
         <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
           <img src="../../assets/mysql.png" alt="mysql" height="150px">
           <div>MYSQL</div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card fxFlex="1 1 100%" [ngStyle.lt-md]="{'max-width.%': 90}">
+      <mat-card-header>
+        <mat-card-title>
+          CMS
+        </mat-card-title>
+      </mat-card-header>
+      <div>
+        <mat-divider></mat-divider>
+      </div>
+      <mat-card-content fxLayout="row wrap" fxLayoutAlign="space-around start" fxLayoutGap="1em">
+        <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
+          <img src="../../assets/wordpress.png" alt="spring" height="150px">
+          <div>WORDPRESS</div>
+        </div>
+        <div class="logo_text" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="1em">
+          <img src="../../assets/Prestashop-logo.png" alt="mysql" height="150px">
+          <div>PRESTASHOP</div>
         </div>
       </mat-card-content>
     </mat-card>

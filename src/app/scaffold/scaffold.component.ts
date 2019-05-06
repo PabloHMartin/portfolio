@@ -22,15 +22,16 @@ export class ScaffoldComponent {
 
   scroll(id: string) {
     const el = document.getElementById(id);
-    el.scrollIntoView();
-    this.isHandset$.subscribe((data) => {
+    el.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+    /**
+     *     this.isHandset$.subscribe((data) => {
+
       if (data) {
+
         this.drawer.close();
       }
     });
-
-
-
+     */
   }
 
 

@@ -8,8 +8,10 @@ mat-toolbar {
 }
 mat-card{
   min-height: 400px;
-
+  min-width: 350px;
+  max-width: 350px;
   padding: 0px;
+  margin-top: 20px;
 }
 mat-card-content{
   padding: 1.5em;
@@ -23,6 +25,9 @@ mat-card-content{
   font-size: 1.1em;
 }
 .image_container{
+  min-height: 180px;
+  max-height: 180px;
+
   img{
 
     max-width: 350px;

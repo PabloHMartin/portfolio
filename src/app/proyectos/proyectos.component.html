@@ -1,6 +1,7 @@
 <section id="projects" fxLayout="column">
   <mat-toolbar color="primary" [ngStyle.lt-md]="{'margin-top.px': 80}">PROYECTOS</mat-toolbar>
-  <div class="cards_container" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="2em">
+  <div class="cards_container" fxLayout.lt-md="column" fxLayout="row wrap" fxLayoutAlign="space-evenly center"
+    fxLayoutGap="20px">
     <mat-card>
       <div class="image_container">
         <img src="../../assets/galher.JPG" alt="galher">
@@ -8,7 +9,7 @@
       <mat-card-content fxLayout="column" fxLayoutGap="1em">
         <div class="title" fxLayout="row" fxLayoutAlign="space-between center">
           <div>Galher Barber Shop</div>
-          <button width="20px" mat-icon-button [matMenuTriggerFor]="menu">
+          <button width="20px" mat-icon-button [matMenuTriggerFor]="galher_menu">
             <mat-icon>more_vert</mat-icon>
           </button>
         </div>
@@ -23,15 +24,102 @@
         </ul>
       </mat-card-content>
     </mat-card>
+    <mat-card>
+      <div class="image_container">
+        <img src="../../assets/LOGO_CongresoSCOI.png" alt="galher"
+          [ngStyle]="{'max-height.px': 180, 'margin-left.%': 15}">
+      </div>
+      <mat-card-content fxLayout="column" fxLayoutGap="1em">
+        <div class="title" fxLayout="row" fxLayoutAlign="space-between center">
+          <div>App Congreso SCOI</div>
+          <button width="20px" mat-icon-button [matMenuTriggerFor]="congreso_scoi_menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </div>
+        <div class="description">
+          App IONIC para Congreso de odontología
+        </div>
+        <ul>
+          <li>IONIC 4</li>
+          <li>Firebase</li>
+          <li>Adobe xd</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <div class="image_container">
+        <img src="../../assets/logo_nubes.png" alt="nubes"
+          [ngStyle]="{'padding-top.px': 35,'margin-buttom.px': 4, 'padding-left.%':20}">
+      </div>
+      <mat-card-content fxLayout="column" fxLayoutGap="1em">
+        <div class="title" fxLayout="row" fxLayoutAlign="space-between center">
+          <div>Estar en las nubes</div>
+          <button width="20px" mat-icon-button [matMenuTriggerFor]="nubes_menu">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </div>
+        <div class="description">
+          Ecommerce ropa de niños
+        </div>
+        <ul>
+          <li>Prestasgop 1.7</li>
+          <li>Revolution Slider</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
+    <mat-card>
+      <div class="image_container">
+        <img src="../../assets/GARAJE_RED_.png" alt="nubes"
+          [ngStyle]="{'padding-top.px': 75,'margin-buttom.px': 15, 'padding-left.%':30}">
+      </div>
+      <mat-card-content fxLayout="column" fxLayoutGap="1em">
+        <div class="title" fxLayout="row" fxLayoutAlign="space-between center">
+          <div>Asociación Garaje</div>
+          <button width="20px" mat-icon-button [matMenuTriggerFor]="garaje">
+            <mat-icon>more_vert</mat-icon>
+          </button>
+        </div>
+        <div class="description">
+          Asociación para ayuda a personas en riesgo de exclusión
+        </div>
+        <ul>
+          <li>Wordpress</li>
+          <li>Photoshop</li>
+        </ul>
+      </mat-card-content>
+    </mat-card>
   </div>
 </section>
-<mat-menu #menu="matMenu">
+<mat-menu #galher_menu="matMenu">
   <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
-    <i class="fas fa-external-link-alt icon"></i>
-    <a href="https://www.galherbarbershop.com/reservas" target="_blank"><span class="text">Abrir</span></a>
+
+    <a href="https://galherbarbershop.com/reservas" target="_blank"><i class="fas fa-external-link-alt icon"></i><span
+        class="text">Abrir</span></a>
   </button>
   <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
     <i class="fab fa-github icon"></i>
     <span class="text">Github</span>
+  </button>
+</mat-menu>
+
+<mat-menu #congreso_scoi_menu="matMenu">
+  <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
+
+    <a href="https://congreso.fundacionosteosite.com/" target="_blank"><i
+        class="fas fa-external-link-alt icon"></i><span class="text">Abrir</span></a>
+  </button>
+</mat-menu>
+<mat-menu #nubes_menu="matMenu">
+  <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
+
+    <a href="https://estarenlasnubes.es/" target="_blank"><i class="fas fa-external-link-alt icon"></i><span
+        class="text">Abrir</span></a>
+  </button>
+</mat-menu>
+<mat-menu #garaje="matMenu">
+  <button fxLayoutAlign="start baseline" fxLayoutGap="0.5em" mat-menu-item>
+
+    <a href="http://asociaciongaraje.es" target="_blank"><i class="fas fa-external-link-alt icon"></i><span
+        class="text">Abrir</span></a>
   </button>
 </mat-menu>
