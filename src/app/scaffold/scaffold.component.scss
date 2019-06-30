@@ -3,7 +3,7 @@
 }
 
 .sidenav {
-  width: 190px;
+  width: 210px;
 }
 
 .sidenav .mat-toolbar {
@@ -64,7 +64,12 @@ margin-right:15px;
   background-image: url("../../assets/bg.png");
 }
 mat-nav-list{
-  width: 150px;
+ .mat-list-item{
+   span{
+
+     width: 210px;
+   }
+ }
 }
 .mobile_toolbar{
   height: 80px;
